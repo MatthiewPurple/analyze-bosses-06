@@ -49,6 +49,8 @@ public class AnalyzeBosses06 : MelonMod
             {
                 string affinitiesText; // Text for the affinities
 
+                //Console.WriteLine($"Currently analyzing: {datDevilName.Get(nbPanelProcess.pNbPanelAnalyzeUnitWork.id)} ({nbPanelProcess.pNbPanelAnalyzeUnitWork.id})");
+
                 int ID = nbPanelProcess.pNbPanelAnalyzeUnitWork.id; // Target's ID
                 switch (ID)
                 {
@@ -90,6 +92,9 @@ public class AnalyzeBosses06 : MelonMod
                         affinitiesText = "Null: Light/Dark/Nerve/Mind • Str: Magic";
                         nbMainProcess.GetBattleUI(5).transform.Find("banalyze_skill/banalyze_skill01/banalyze_textTM").gameObject.GetComponent<TextMeshProUGUI>().text = datSkillName.Get(153);
                         nbMainProcess.GetBattleUI(5).transform.Find("banalyze_skill/banalyze_skill02/banalyze_textTM").gameObject.GetComponent<TextMeshProUGUI>().text = datSkillName.Get(1);
+                        break;
+                    case 0316: //Nekomata
+                        affinitiesText = datAisyoName.Get(86);
                         break;
                     case 0317: //Troll
                         affinitiesText = datAisyoName.Get(55);
