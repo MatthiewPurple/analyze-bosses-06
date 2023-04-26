@@ -49,7 +49,7 @@ public class AnalyzeBosses06 : MelonMod
             {
                 string affinitiesText; // Text for the affinities
 
-                //Console.WriteLine($"Currently analyzing: {datDevilName.Get(nbPanelProcess.pNbPanelAnalyzeUnitWork.id)} ({nbPanelProcess.pNbPanelAnalyzeUnitWork.id})");
+                Console.WriteLine($"Currently analyzing: {datDevilName.Get(nbPanelProcess.pNbPanelAnalyzeUnitWork.id)} ({nbPanelProcess.pNbPanelAnalyzeUnitWork.id})");
 
                 int ID = nbPanelProcess.pNbPanelAnalyzeUnitWork.id; // Target's ID
                 switch (ID)
@@ -182,6 +182,12 @@ public class AnalyzeBosses06 : MelonMod
                         nbMainProcess.GetBattleUI(5).transform.Find("banalyze_skill/banalyze_skill03/banalyze_textTM").gameObject.GetComponent<TextMeshProUGUI>().text = datSkillName.Get(20);
                         nbMainProcess.GetBattleUI(5).transform.Find("banalyze_skill/banalyze_skill04/banalyze_textTM").gameObject.GetComponent<TextMeshProUGUI>().text = datSkillName.Get(59);
                         nbMainProcess.GetBattleUI(5).transform.Find("banalyze_skill/banalyze_skill05/banalyze_textTM").gameObject.GetComponent<TextMeshProUGUI>().text = datSkillName.Get(226);
+                        break;
+                    case 0310: //Kelpie1
+                        affinitiesText = datAisyoName.Get(57);
+                        break;
+                    case 0311: //Kelpie2
+                        affinitiesText = datAisyoName.Get(57);
                         break;
                     case 0262: //Kaiwan1
                         affinitiesText = "Null: Magic/Dark/Ailments • Str: Curse/Mind/Nerve • Weak: Light";
