@@ -441,7 +441,7 @@ public class AnalyzeBosses06 : MelonMod
                         nbMainProcess.GetBattleUI(5).transform.Find("banalyze_skill/banalyze_skill07/banalyze_textTM").gameObject.GetComponent<TextMeshProUGUI>().text = datSkillName.Get(226);
                         break;
                     case 0334: //Mot
-                        affinitiesText = "Rpl: Force • Drn: Ice • Null: Fire/Light/Dark/Ailments • Str: Phys • Weak: Elec";
+                        affinitiesText = "Rpl: Force • Drn: Ice • Str: Phys • Weak: Elec • Null: All other";
                         nbMainProcess.GetBattleUI(5).transform.Find("banalyze_skill/banalyze_skill01/banalyze_textTM").gameObject.GetComponent<TextMeshProUGUI>().text = datSkillName.Get(219);
                         nbMainProcess.GetBattleUI(5).transform.Find("banalyze_skill/banalyze_skill02/banalyze_textTM").gameObject.GetComponent<TextMeshProUGUI>().text = datSkillName.Get(67);
                         nbMainProcess.GetBattleUI(5).transform.Find("banalyze_skill/banalyze_skill03/banalyze_textTM").gameObject.GetComponent<TextMeshProUGUI>().text = datSkillName.Get(27);
@@ -596,7 +596,7 @@ public class AnalyzeBosses06 : MelonMod
                         nbMainProcess.GetBattleUI(5).transform.Find("banalyze_skill/banalyze_skill08/banalyze_textTM").gameObject.GetComponent<TextMeshProUGUI>().text = datSkillName.Get(206);
                         break;
                     case 0267: //Sui-Ki
-                        affinitiesText = "Drn: Ice • Null: Light/Dark/Ailments • Str: Phys/Elec/Force • Weak: Fire";
+                        affinitiesText = "Drn: Ice • Null: Light/Dark/Ailments • Weak: Fire • Str: All other";
                         nbMainProcess.GetBattleUI(5).transform.Find("banalyze_skill/banalyze_skill01/banalyze_textTM").gameObject.GetComponent<TextMeshProUGUI>().text = datSkillName.Get(219);
                         nbMainProcess.GetBattleUI(5).transform.Find("banalyze_skill/banalyze_skill02/banalyze_textTM").gameObject.GetComponent<TextMeshProUGUI>().text = datSkillName.Get(220);
                         nbMainProcess.GetBattleUI(5).transform.Find("banalyze_skill/banalyze_skill03/banalyze_textTM").gameObject.GetComponent<TextMeshProUGUI>().text = datSkillName.Get(8);
