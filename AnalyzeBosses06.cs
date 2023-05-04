@@ -52,6 +52,9 @@ public class AnalyzeBosses06 : MelonMod
                 string affinitiesText; // Text for the affinities
 
                 Console.WriteLine($"Currently analyzing: {datDevilName.Get(nbPanelProcess.pNbPanelAnalyzeUnitWork.id)} ({nbPanelProcess.pNbPanelAnalyzeUnitWork.id})");
+                Console.WriteLine(nbEncount.nbGetBgmCategoryInBattle());
+                Console.WriteLine(nbMainProcess.nbGetMainProcessData().encno);
+                Console.WriteLine(nbMainProcess.nbGetMainProcessData().encpackno);
 
                 int ID = nbPanelProcess.pNbPanelAnalyzeUnitWork.id; // Target's ID
                 switch (ID)
@@ -570,10 +573,14 @@ public class AnalyzeBosses06 : MelonMod
                         nbMainProcess.GetBattleUI(5).transform.Find("banalyze_skill/banalyze_skill08/banalyze_textTM").gameObject.GetComponent<TextMeshProUGUI>().text = datSkillName.Get(254);
                         nbMainProcess.GetBattleUI(5).transform.Find("banalyze_skill/banalyze_skill09/banalyze_textTM").gameObject.GetComponent<TextMeshProUGUI>().text = datSkillName.Get(241);
                         break;
-                    case 0313: //Succubus
+                    case 0313: //Succubus (Berith's ally)
                         affinitiesText = "Null: Light/Dark • Str: Magic";
                         nbMainProcess.GetBattleUI(5).transform.Find("banalyze_skill/banalyze_skill01/banalyze_textTM").gameObject.GetComponent<TextMeshProUGUI>().text = datSkillName.Get(214);
                         nbMainProcess.GetBattleUI(5).transform.Find("banalyze_skill/banalyze_skill02/banalyze_textTM").gameObject.GetComponent<TextMeshProUGUI>().text = datSkillName.Get(210);
+                        break;
+                    case 0117: //Succubus (Chest boss)
+                        if (nbMainProcess.nbGetMainProcessData().encno != 990) return; // If fighting a regular Succubus
+                        affinitiesText = datAisyoName.Get(117);
                         break;
                     case 0361: //Legion (Black Rider)
                         affinitiesText = "Rpl: Dark • Str: Ailments • Weak: Elec/Light";
