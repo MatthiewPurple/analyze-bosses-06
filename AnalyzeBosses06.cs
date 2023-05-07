@@ -369,25 +369,25 @@ public class AnalyzeBosses06 : MelonMod
                         nbMainProcess.GetBattleUI(5).transform.Find("banalyze_skill/banalyze_skill05/banalyze_textTM").gameObject.GetComponent<TextMeshProUGUI>().text = datSkillName.Get(101);
                         break;
                     case 0281: //Luvah
-                        affinitiesText = "Rpl: Force • Null: Light/Dark/Curse/Nerve/Mind • Weak: Elec";
+                        affinitiesText = "Rpl: Force • Null: Light/Dark/Ailments • Weak: Elec";
                         nbMainProcess.GetBattleUI(5).transform.Find("banalyze_skill/banalyze_skill01/banalyze_textTM").gameObject.GetComponent<TextMeshProUGUI>().text = datSkillName.Get(21);
                         nbMainProcess.GetBattleUI(5).transform.Find("banalyze_skill/banalyze_skill02/banalyze_textTM").gameObject.GetComponent<TextMeshProUGUI>().text = datSkillName.Get(24);
                         nbMainProcess.GetBattleUI(5).transform.Find("banalyze_skill/banalyze_skill03/banalyze_textTM").gameObject.GetComponent<TextMeshProUGUI>().text = datSkillName.Get(50);
                         break;
                     case 0280: //Urizen
-                        affinitiesText = "Rpl: Fire • Null: Light/Dark/Curse/Nerve/Mind • Weak: Ice";
+                        affinitiesText = "Rpl: Fire • Null: Light/Dark/Ailments • Weak: Ice";
                         nbMainProcess.GetBattleUI(5).transform.Find("banalyze_skill/banalyze_skill01/banalyze_textTM").gameObject.GetComponent<TextMeshProUGUI>().text = datSkillName.Get(3);
                         nbMainProcess.GetBattleUI(5).transform.Find("banalyze_skill/banalyze_skill02/banalyze_textTM").gameObject.GetComponent<TextMeshProUGUI>().text = datSkillName.Get(6);
                         nbMainProcess.GetBattleUI(5).transform.Find("banalyze_skill/banalyze_skill03/banalyze_textTM").gameObject.GetComponent<TextMeshProUGUI>().text = datSkillName.Get(50);
                         break;
                     case 0282: //Tharmus
-                        affinitiesText = "Rpl: Ice • Null: Light/Dark/Curse/Nerve/Mind • Weak: Fire";
+                        affinitiesText = "Rpl: Ice • Null: Light/Dark/Ailments • Weak: Fire";
                         nbMainProcess.GetBattleUI(5).transform.Find("banalyze_skill/banalyze_skill01/banalyze_textTM").gameObject.GetComponent<TextMeshProUGUI>().text = datSkillName.Get(9);
                         nbMainProcess.GetBattleUI(5).transform.Find("banalyze_skill/banalyze_skill02/banalyze_textTM").gameObject.GetComponent<TextMeshProUGUI>().text = datSkillName.Get(12);
                         nbMainProcess.GetBattleUI(5).transform.Find("banalyze_skill/banalyze_skill03/banalyze_textTM").gameObject.GetComponent<TextMeshProUGUI>().text = datSkillName.Get(50);
                         break;
                     case 0279: //Urthona
-                        affinitiesText = "Rpl: Elec • Null: Light/Dark/Curse/Nerve/Mind • Weak: Wind";
+                        affinitiesText = "Rpl: Elec • Null: Light/Dark/Ailments • Weak: Wind";
                         nbMainProcess.GetBattleUI(5).transform.Find("banalyze_skill/banalyze_skill01/banalyze_textTM").gameObject.GetComponent<TextMeshProUGUI>().text = datSkillName.Get(15);
                         nbMainProcess.GetBattleUI(5).transform.Find("banalyze_skill/banalyze_skill02/banalyze_textTM").gameObject.GetComponent<TextMeshProUGUI>().text = datSkillName.Get(18);
                         nbMainProcess.GetBattleUI(5).transform.Find("banalyze_skill/banalyze_skill03/banalyze_textTM").gameObject.GetComponent<TextMeshProUGUI>().text = datSkillName.Get(50);
