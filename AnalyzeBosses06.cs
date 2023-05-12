@@ -51,11 +51,6 @@ public class AnalyzeBosses06 : MelonMod
             {
                 string affinitiesText; // Text for the affinities
 
-                Console.WriteLine($"Currently analyzing: {datDevilName.Get(nbPanelProcess.pNbPanelAnalyzeUnitWork.id)} ({nbPanelProcess.pNbPanelAnalyzeUnitWork.id})");
-                Console.WriteLine(nbEncount.nbGetBgmCategoryInBattle());
-                Console.WriteLine(nbMainProcess.nbGetMainProcessData().encno);
-                Console.WriteLine(nbMainProcess.nbGetMainProcessData().encpackno);
-
                 int ID = nbPanelProcess.pNbPanelAnalyzeUnitWork.id; // Target's ID
                 switch (ID)
                 {
