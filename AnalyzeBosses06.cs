@@ -30,7 +30,7 @@ public class AnalyzeBosses06 : MelonMod
     {
         public static void Prefix()
         {
-            // Waits a bit before searching for 
+            // Waits a bit before searching calling DisplayHPMP
             if (nbMainProcess.GetBattleUI(5) != null && !isHPMPOn)
             {
                 // Display HP and MP info (in case it was hidden for a boss)
@@ -936,7 +936,6 @@ public class AnalyzeBosses06 : MelonMod
                         return; // Not do anything special if the target isn't a boss
                 }
                 nbMainProcess.GetBattleUI(5).transform.Find("banalyze_attribute/banalyze_attribute_textTM").gameObject.GetComponent<TextMeshProUGUI>().text = affinitiesText; // Apply the affinities' text
-
 
                 // Remove HP and MP info (because most bosses have more than triple digits HP/MP)
                 Utility.DisplayHPMP(false);
